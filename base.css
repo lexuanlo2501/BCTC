@@ -14,6 +14,8 @@
 .radom_result__item, .model__page__close {
     user-select: none;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 @keyframes fadeIn {
