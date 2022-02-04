@@ -13,17 +13,5 @@ function myFunc_Main(x){
     
 }
 
-[1,2,3,4,5].forEach(function(x){
-    // setTimeout(function(){
-    //     for(let i = 1; i<=20; i++){
-    //         console.log(i)
-    //     }
-
-    // },0)
-    for(let i = 1; i<=20; i++){
-        console.log(i)
-    }
-    console.log(x)
-})
 
 
