@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Paytone+One&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./grid.css">
+    <div class="dark_mode">
+        <!-- <link rel="stylesheet" href="./override.css"> -->
+    </div>
+
+    <link rel="stylesheet" href="./responsive.css">
+
+    <title>B C T C</title>
+</head>
+<body>
+    <div class="main">
+        <div class="grid wide main-interface">
+            <div class="headingPage">
+                <div class="headingPage__wrapper--left">
+                    <div class="headingPage__title">
+                        <span class="letter--1">bầu</span>
+                        <span class="letter--2">cua</span>
+                        <span class="letter--3">tôm</span>
+                        <span class="letter--4">cá</span>
+                           
+                    </div>
+                    <div class="headingPage__mode">
+                        <!-- <img class="headingPage__status light off" src="./img/icon/streamline-icon-interface-lighting-brightness-4@70x70.svg" alt="">
+                        <img class="headingPage__status dark " src="./img/icon/streamline-icon-interface-weather-moon@70x70.svg" alt=""> -->
+    
+                        <img class="headingPage__status light off" src="./img/icon/sun.png" alt="">
+                        <img class="headingPage__status dark " src="./img/icon/moon.png" alt="">
+                        <div class="cir"></div>
+                    </div>
+
+                </div>
+
+                <div class="headingPage__wrapper--right">
+                    <div class="setting">
+                        <img class="setting__icon--1" src="./img/icon/gear.png" alt="">
+                        <span class="setting__icon--2">
+                            <i class="fas fa-cog"></i>
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="cage">
+                <div class="row">
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a1" number="1">
+                            <img class="animal-img" src="./img/crab.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a2" number="2">
+                            <img class="animal-img" src="./img/deer.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a3" number="3">
+                            <img class="animal-img" src="./img/fish.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a4" number="4">
+                            <img class="animal-img" src="./img/hen.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a5" number="5">
+                            <img class="animal-img" src="./img/sake.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col l-4 m-4 c-6">
+                        <div class="animal-item a6" number="6">
+                            <img class="animal-img" src="./img/shrimp.png" alt="">
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="random-animals">
+                <div class="row">
+                    <div class="col l-6 m-12 c-12">
+                        <div class="radom_result">
+                            <div class="radom_result__item">
+                                <!-- use DOM to create tag img in active.js -->
+                                <!-- <img class="radom_result__item__img" src="" alt=""> -->
+                            </div>
+                            <div class="radom_result__item">
+                                <!-- <img class="radom_result__item__img" src="" alt=""> -->
+                            </div>
+                            <div class="radom_result__item">
+                                <!-- <img class="radom_result__item__img" src="" alt=""> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-12 c-12">
+                        <div class="panel_bet">
+                            <p class="panel_bet__point"></p>
+                            <input class="panel_bet__input" placeholder="..." type="text">
+                            <button class="random-animals__btn">roll</button>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+            </div>
+
+        </div>
+
+        <div class="model">
+            <div class="model__overlay"></div>
+            <div class="model__page">
+                <h2 class="model__headding">Cài Đặt</h2>
+                <span class="model__page__close">
+                    <i class="fas fa-times"></i>
+                </span>
+                <img class="model__page__img-error" src="./img/chihuahua-meme-face.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="./active.js"></script>
+</body>
+</html>

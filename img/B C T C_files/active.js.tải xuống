@@ -1,0 +1,101 @@
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
+
+let animals =$$('.animal-item')
+
+animals.forEach(function(value, index){
+    value.onclick = function(){
+        let checkAndDel = $('.animal-item.active')
+        if(checkAndDel){
+            checkAndDel.classList.remove('active')
+        }
+        this.classList.add('active')
+    }
+});
+
+let randNum = Math.floor(Math.random()*5)+1
+
+// return result 1...6
+function randNums(){
+    return [
+        Math.floor(Math.random()*6)+1
+        ,Math.floor(Math.random()*6)+1
+        ,Math.floor(Math.random()*6)+1
+    ]
+}
+
+
+
+// for(let x of animals){
+//     console.log(x.querySelector('.animal-img').getAttribute('src'))
+// }
+
+
+
+
+// console.log($(`.a${1} .animal-img`).getAttribute('src'))
+let myPoint = parseInt($('.panel_bet__point').innerHTML)
+
+let rand_btn = $('.random-animals__btn')
+let getPoint = 0;
+
+rand_btn.onclick = function(){
+    let valueAnimal_IDs = randNums()
+   
+    let check = $('.animal-item.active')
+    if(check){
+        check = $('.animal-item.active').getAttribute('number');
+
+        $$('.radom_result__item').forEach(function(x, i){
+            // Array.from($$('.radom_result__item')).forEach(function(x, i){
+        
+            x.innerHTML = `
+                <img class="radom_result__item__img" src="${
+                    $(`.a${valueAnimal_IDs[i]} .animal-img`).getAttribute('src')
+                }" alt="">
+            `
+        })
+    }
+
+    let correct = false;
+    getPoint = parseInt($('.panel_bet__input').value) ;
+    // if(getPoint != '' && getPoint != NaN && check){
+    if(getPoint && check){
+
+
+        for(let x of valueAnimal_IDs) {
+    
+            if(check == x){
+                console.log('true')
+                myPoint+=getPoint;
+                correct = true;
+                console.log("get point from input: " + getPoint) /**check */
+            }
+        }
+    
+        if(correct === true){
+    
+        }
+        if(correct === false) {
+            myPoint-=getPoint;
+        }
+        $('.panel_bet__input').value = ''
+        $('.panel_bet__point').innerHTML = myPoint
+        
+        console.log("my point: " + myPoint) /**check */
+
+    }
+    
+}
+
+$('.randTest--btn').onclick = rollRand
+
+let containerRollR = $('.randTest')
+
+function rollRand(){
+    for(let i = 1; i<=6; i++){
+        // containerRollR.innerHTML =  `<img src="${}" alt="">`
+    }
+}
+
+$('div[number=2]')

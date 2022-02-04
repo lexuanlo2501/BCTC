@@ -1,0 +1,133 @@
+body {
+    /* background-color: rgb(243, 232, 217); */
+    background-color: rgb(233, 110, 110);
+
+}
+
+.cage {
+    margin-top: 80px;
+}
+.animal-item {
+    background-color: rgb(251, 251, 251);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px 0;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.animal-item:hover {
+    background-color: rgb(180, 164, 159);
+}
+
+
+.animal-img {
+    width: 170px;
+}
+
+.animal-item.active {
+    background-color: rgb(253, 243, 153);
+}
+
+.animal-item.correct {
+    background-color: rgb(147, 238, 159);
+}
+
+/* PART 2 */
+
+.random-animals {
+    width: 100%;
+    background-color: rgb(97, 84, 81);
+    padding: 30px;
+    border-radius: 40px;
+    /* display: flex; */
+}
+
+
+
+.radom_result {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.radom_result__item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(246, 248, 247);
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.radom_result__item__img {
+    height: 100%;
+    overflow: hidden;
+}
+
+.panel_bet {
+    /* margin-bottom: 50px; */
+    background-color: rgb(119, 119, 119);
+    padding: 25px 40px;
+    border-radius: 10px;
+}
+
+.panel_bet__input {
+    /* display: block; */
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+}
+
+.panel_bet__input:focus {
+    outline: 3px solid rgb(233, 118, 23);
+}
+
+.panel_bet__point {
+    font-size: 30px;
+    color: #fff;
+    /* margin-left: 20px; */
+    margin-bottom: 10px;
+}
+
+.random-animals__btn {
+    display: block;
+    font-size: 25px;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border-style: none;
+}
+
+
+/* TEST */
+
+.randTest {
+    margin-top: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(61, 63, 63);
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.randTest img {
+    width: 100%;
+    
+}
+
+.randTest--btn {
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+footer {
+    height: 500px;
+}
