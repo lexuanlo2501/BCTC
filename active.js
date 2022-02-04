@@ -41,6 +41,8 @@ rand_btn.onclick = function(){
 
         $$('.radom_result__item').forEach(function(x, i){
             // Array.from($$('.radom_result__item')).forEach(function(x, i){
+
+
             myFunc_Main(x,100) /** here */
             setTimeout(function(){
                 x.innerHTML = `
@@ -75,7 +77,10 @@ rand_btn.onclick = function(){
             myPoint-=getPoint;
         }
         $('.panel_bet__input').value = ''
-        $('.panel_bet__point').innerHTML = myPoint
+        // $('.panel_bet__point').innerHTML = myPoint
+        setTimeout(function(){
+            $('.panel_bet__point').innerHTML = myPoint
+        },1700)
         
         console.log("my point: " + myPoint) /**check */
         console.log(valueAnimal_IDs)
